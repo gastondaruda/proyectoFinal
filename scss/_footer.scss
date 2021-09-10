@@ -1,0 +1,35 @@
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    &__image{
+        width: 80%;
+        background-size: cover;
+    }
+    &__tittle2{
+        position: relative;
+        top: 0;
+    }
+    &__icons{
+        display: flex;
+        .bx{
+        position: relative;
+        font-size: 70px;
+        color: #000;
+        transition: .4s;
+        }
+        .bxl-facebook-square:hover{
+            color: rgb(0, 47, 255);
+        }
+        
+        .bxl-instagram:hover{
+            color: rgb(201, 36, 146);
+        }
+        
+        .bxl-whatsapp:hover{
+            color: #166E22;
+        }
+    }
+}

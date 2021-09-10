@@ -1,0 +1,19 @@
+// BUCLES
+// FOR
+@for $i from 1 through 3 {
+    .mnt-#{$i} {
+        margin-top: $i + 0.5rem;
+    }
+}
+
+
+// CONDICIONALES
+
+@if $font-size == 48px  {
+    .hero__title2 {
+        color: $green-color2;
+    }
+}
+
+
+// EXTEND EN _NOSOTROS.SCSS LINEA 38 

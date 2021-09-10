@@ -1,0 +1,56 @@
+@import "variables";
+.navbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin: 0;
+    
+}
+.navbar-brand{
+    font-size: 25px;
+}
+.nav-item{
+    text-decoration: none;
+    color: $grey-color;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: .4s;
+}
+    
+    .nav-item:hover{
+        background-color: $green-color;
+    .nav-link{
+        color: $black-color;
+        transition: .4s;
+    }
+        .nav-link:hover{
+            color: $white-color;
+        }
+
+    
+
+}
+
+.navbar-expand-lg{
+    .navbar-collapse{
+        justify-content: flex-end;
+    }
+    .navbar-nav{
+        .dropdown-menu{
+            position: absolute;
+            left: -60px;
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        left: 0;
+    }
+}

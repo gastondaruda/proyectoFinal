@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Otomanopee One', sans-serif;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+
+
+
+/* -----------NAVBAR---------------------- */
+
+.navbar{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin: 0;
+    box-shadow: 0 4px 4px rgb(0 0 0 / 48%);
+}
+
+.navbar-brand{
+    font-size: 25px;
+}
+
+.nav-item{
+    text-decoration: none;
+    color: #707070;
+    font-size: 18px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: .4s;
+}
+
+.nav-item:hover{
+    background-color: #0ebb25;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: #000;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #fff;
+}
+
+.carousel .slide{
+    width: 100%;
+    position: relative;
+    top: -60px;
+}
+
+.carousel-inner{
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    /* ACA ME VOLVIO A PASAR QUE HAY UN PEQUEÑO SCROLL HACIA EL COSTADO, QUISE SOLUCIONARLO CON EL 100VW PERO NO QUEDABA*/
+    height: 100vh;
+}
+
+.imagen{
+    height: 100%;
+    background-size: cover;
+    width: 100%;
+}
+
+
+/* --------------INDEX/QUIENES SOMOS   ------------------- */
+
+
+.first__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tittle2{
+    text-align: center;
+    font-size: 48px;
+    position: relative;
+    top: 5px;
+    color: #166E22;
+}
+
+.menus{
+    text-decoration: underline;
+    font-size: 44px;
+    color: #0d3a03;
+    text-align: center;
+}
+
+.info{
+    font-size: 25px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.description{
+    color: rgb(85, 83, 83);
+    text-align: center;
+    padding: 80px 40px;
+    font-style: italic;
+    line-height: 2.4rem;    
+}
+
+.description__us{
+    padding: 0 30px;
+    color: rgb(85, 83, 83);
+    text-align: center;
+    font-style: italic;
+    line-height: 2.4rem;
+}
+
+
+.imagenes{
+    width: 550px;
+    border-radius: 40px;
+    position: relative;
+    top: 27px;  
+    transition: .4s;
+}
+
+.hover__image:hover .imagenes{
+    transform: scale(1.1);
+}
+
+.imagenes__cocineros{
+    width: 25rem;
+    border-radius: 40px;
+    /* position: relative; */
+    /* top: 27px; */
+    transition: .4s;
+    margin: 20px 87px;
+}
+
+.imagenes__cocineros:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.medium--bg{
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    position: relative;
+}
+
+.image--medium--bg{
+    width: 100%;
+}
+
+.container__bootstrap{
+    margin: 30px 50px;
+    padding: 0 20px;
+}
+
+/* -----------GRID-IMAGENES---------------------- */
+
+.container__grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 200px);
+    grid-template-areas: 
+        "imagen1 imagen2 imagen3 imagen3"
+        "imagen1 imagen4 imagen3 imagen3"
+        "imagen7 imagen4 imagen6 imagen9"
+        "imagen7 imagen12 imagen6 imagen9"
+        "imagen8 imagen8 imagen11 imagen10"
+        "imagen8 imagen8 imagen11 imagen10"
+        "imagen5 imagen5 imagen13 imagen13";
+    padding: 26px 10px;
+    object-fit: cover;
+    gap: 10px;  
+}
+
+.grid__item{
+    height: 100%;
+    overflow: hidden;
+    border-radius: 20px;    
+}
+
+
+.grid__item .grid__image{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    
+    filter: grayscale(1);
+    transition: .4s;    
+}
+
+.grid__item:hover .grid__image{
+    transform: scale(1.1);
+}
+
+.grid__image:hover{
+    filter: grayscale(0);
+}
+
+.item1{
+    grid-area: imagen1;
+}
+
+.item2{
+    grid-area: imagen2;
+}
+
+.item3{
+    grid-area: imagen3;
+}
+
+.item4{
+    grid-area: imagen4;
+}
+
+.item5{
+    grid-area: imagen5;
+}
+
+.item6{
+    grid-area: imagen6;
+}
+
+.item7{
+    grid-area: imagen7;
+}
+
+.item8{
+    grid-area: imagen8;
+}
+
+.item9{
+    grid-area: imagen9;
+}
+
+.item10{
+    grid-area: imagen10;
+}
+
+.item11{
+    grid-area: imagen11;
+}
+
+.item12{
+    grid-area: imagen12;
+}
+
+.item13{
+    grid-area: imagen13;
+}
+
+
+/* Esto es parte del código que había hecho antes de usar grid-template-areas
+
+.gallery__container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px 200px 100px;
+    width: 100vw;
+    border: 2px solid red;
+    
+    gap:5px;
+}
+.main__photo{
+    width: 350px;
+}
+
+.main__photo:hover{
+    filter: grayscale(0);
+}
+
+.main__photo:nth-child(4) {
+    grid-column-start: span 2;
+}
+
+.main__photo:nth-child(5) {
+    grid-row-start: span 2;
+}
+
+.main__photo:nth-child(6) {
+    grid-row-start: span 2;
+}
+
+.main__photo:nth-child(9) {
+    grid-row-start: span 2;
+}
+.main__pshoto:nth-child(10) {
+    grid-row-start: span 2;
+}
+
+.main__photo:nth-child(12) {
+    grid-row-start: span 2;
+}
+
+
+/* -----------RESEÑAS---------------------- */
+
+
+.reseña{
+    margin: 0 40px;
+    overflow: hidden;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    padding: 30px;
+    width: 300px;
+    margin: 15px 20px;
+    justify-content: center;
+    border-radius: 20px;
+    transition: .4s;
+}
+
+.testimonios img{
+    width: 13rem;
+    height: 140px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+
+.stars{
+    color: #6ab04c;
+    margin-bottom: 20px;
+}
+
+.review--info{
+    font-size: 1.1em;
+    color: #707070;
+    transition: .4s;
+}
+
+.testimonios:hover{
+    box-shadow: 7px 13px 37px rgb(173, 173, 173);
+    color: #000;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/*
+.reseña{
+    margin: 0 80px;
+    
+}
+
+.review-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    height: 50px;    
+}
+
+.review{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    flex-wrap: wrap;    
+}
+
+.review--content{
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    width: 310px;
+    margin-top: 4px;
+    padding-top: 40px;
+    align-items: center;
+    transition: .4s;
+}
+
+.review--content:hover{
+    box-shadow: 7px 13px 37px rgba(0, 0, 0, 0.815);
+    background-color: rgb(247, 238, 238);
+}
+
+.review-subtittle{
+    font-size: 1.3rem;
+}
+
+.review-info{
+    font-size: 0.9rem;
+    color: rgb(85, 83, 83);
+    margin: 10px 15px;
+}
+
+.review-image{
+    width: 120px;
+    
+    border-radius: 50%;  
+}
+
+
+
+/* -----------FORMULARIO---------------------- */
+.form{
+    width: 400px;
+    background: #24303c;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    color: #fff;
+    box-shadow: 7px 13px 37px #000;
+}
+
+h4{
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.controls{
+    width: 100%;
+    
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #1f53c5;
+    font-size: 18px;
+}
+
+
+.form .button{
+    width: 100%;
+    background: #1f53c5;
+    border: none;
+    padding: 12px;
+    color: #fff;
+    margin: 16px auto;
+    font-size: 16px;
+}
+
+
+.textarea{
+    height: 100px;
+    font-size: 15px;
+    align-items: flex-end;
+}
+/* -----------FOOTER---------------------- */
+
+
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    
+}    
+.footer__image{   
+    width: 100%;
+    background-size: cover;
+}
+
+.foot .tittle2{
+    position: relative;
+    top: 0;
+}
+
+.icons{
+    display: flex;
+}
+
+.bx__icons{
+    display: flex;    
+}
+
+footer .bx{
+    position: relative;
+    font-size: 70px;
+    color: #000;
+    transition: .3s;
+}
+
+.bxl-facebook-square:hover{
+    color: rgb(0, 47, 255);
+}
+
+.bxl-instagram:hover{
+    color: rgb(201, 36, 146);
+}
+
+.bxl-whatsapp:hover{
+    color: #166E22;
+}
+
+
+h6{
+    position: relative;
+    font-size: 15px;    
+    color:rgb(43, 43, 43);
+}
+
+
+/* ------MAX-WIDTH-----768-----------------*/
+
+@media screen and (max-width: 768px) {
+    .imagen {
+        height: 50vh;
+    }
+
+    .carousel{
+        height: 50vh;
+    }
+
+    nav ul{
+        margin-bottom: 10px;
+    }
+
+    nav ul li{
+        padding: 0 7px;
+    }
+
+    nav ul li a{
+        font-size: 1.3rem;
+        
+    }
+
+    .reserve--button{
+        font-size: 1.5rem;
+    }
+
+    .first__section{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;        
+}
+
+    .tittle2{
+        text-align: center;
+        font-size: 35px;
+        position: relative;
+        top: 5px;
+        color: #166E22;
+    }
+
+    .menus{
+        text-decoration: underline;
+        font-size: 34px;
+        color: #0d3a03;
+        text-align: center;
+    }
+
+    .info{
+        font-size: 22px;
+        text-align: center;
+        font-weight: 400;
+        margin-bottom: -42px;
+    }
+
+    .description{  
+        padding: 80px 40px;
+        font-size: 15px; 
+        margin-bottom: -60px;   
+    }
+
+    .imagenes{
+        width: 28rem;
+        max-height: 666px;
+        border-radius: 40px;
+        position: relative;
+        margin-top: 45px;
+        transition: .4s;
+    }
+    
+    .hover__image:hover .imagenes{
+        transform: scale(1.1);
+    }
+
+    .tittle{
+        width: 100vw;
+        font-size: 80px;
+    }
+
+    .row{
+        margin: 14px 60px;
+    }
+
+    .container__bootstrap{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .col-12{
+        display: flex;
+        justify-content: center;
+    }
+        
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(4, 200px);
+        grid-template-areas: 
+            "imagen1 imagen2 imagen3 imagen3"
+            "imagen1 imagen4 imagen3 imagen3"
+            "imagen7 imagen7 imagen9 imagen9"
+            "imagen12 imagen6 imagen6 imagen6"
+            "imagen8 imagen8 imagen10 imagen10"
+            "imagen8 imagen8 imagen11 imagen11"
+            "imagen5 imagen5 imagen5 imagen13";
+        gap: 2px;
+    }
+
+
+    .description_us{
+        margin-bottom: 80px;
+        width: 100vw;
+    }
+
+    .form{
+        width: 230px;
+        margin-top: 48px;
+        border-radius: 33px;
+    }
+
+    .foot{        
+        display: flex;
+        flex-direction: column; 
+        justify-content: start;
+        align-items: center;
+        height: 200px;
+    }
+
+    .foot .tittle2{
+        font-size: 34px;
+    }
+
+    .footer__image{   
+        background-size: cover;
+        width: 80vw;
+    }
+
+    footer .bx{      
+        font-size: 60px;
+        color: #000; 
+        padding: 0 21px;       
+        transition: .3s;
+    }
+    
+    h6{
+        font-size: 33px;
+    }
+    
+}
+
+/*-----------------MEDIA QUERIES 992-PX----------------------------------------------------------------------*/
+@media screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: flex-end;
+    }
+    
+    .navbar-expand-lg .navbar-nav .dropdown-menu {
+        position: absolute;
+        left: -60px;
+}
