@@ -7,9 +7,6 @@
 .mnt-3 {
   margin-top: 3.5rem; }
 
-.hero__title2 {
-  color: #166E22; }
-
 .navbar {
   width: 100%;
   position: sticky;
@@ -55,33 +52,37 @@
   align-items: center; }
   .hero__title2 {
     text-align: center;
-    font-size: 48px; }
+    font-size: 2.5rem; }
   .hero__menu {
     text-decoration: underline;
     font-size: 44px;
     color: #0d3a03; }
   .hero__info {
-    font-size: 25px;
+    font-size: 1.6rem;
     text-align: center;
     font-weight: 400;
     margin-bottom: 25px; }
   .hero__description {
-    /* color: ; */
     text-align: center;
-    padding: 80px 40px;
+    padding: 40px;
     font-style: italic;
     line-height: 2.4rem;
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: #555353; }
 
 .hover__image, .hero .container .row .col-lg-6 .imagenes__cocineros {
-  width: 22rem;
+  width: 14rem;
   border-radius: 40px;
   top: 20px;
   transition: .4s; }
 
 .hover:hover .hover__image, .hover:hover .hero .container .row .col-lg-6 .imagenes__cocineros, .hero .container .row .col-lg-6 .hover:hover .imagenes__cocineros {
   transform: scale(1.1); }
+
+@media screen and (min-width: 768px) {
+  .hero .hover__image, .hero .container .row .col-lg-6 .imagenes__cocineros {
+    width: 28rem;
+    margin-top: 1rem; } }
 
 .hero {
   display: flex;
@@ -91,7 +92,7 @@
   width: 100%; }
   .hero__tittle2 {
     text-align: center;
-    font-size: 48px;
+    font-size: 2.5rem;
     color: #166E22; }
   .hero .container {
     width: 100%;
@@ -113,7 +114,8 @@
           color: #555353;
           text-align: center;
           font-style: italic;
-          line-height: 3.4rem; }
+          line-height: 3.4rem;
+          font-size: 0.8rem; }
 
 @media screen and (max-width: 768px) {
   .row {
@@ -128,7 +130,7 @@
   align-items: center;
   margin-top: 50px; }
   .foot__image {
-    width: 80%;
+    width: 70%;
     background-size: cover; }
   .foot__tittle2 {
     position: relative;
@@ -137,7 +139,7 @@
     display: flex; }
     .foot__icons .bx {
       position: relative;
-      font-size: 70px;
+      font-size: 2.5rem;
       color: #000;
       transition: .4s; }
     .foot__icons .bxl-facebook-square:hover {
@@ -147,48 +149,61 @@
     .foot__icons .bxl-whatsapp:hover {
       color: #166E22; }
 
+@media screen and (min-width: 768px) {
+  .foot__icons .bx {
+    font-size: 2.5rem; } }
+
 .review {
-  margin: 0 40px;
+  margin: 0 20px;
   overflow: hidden; }
   .review__tittle2 {
     text-align: center;
-    font-size: 48px;
-    top: 5px;
+    font-size: 2.5rem;
+    margin-top: 2.6rem;
     color: #166E22; }
-  .review .review {
+  .review .reviews {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
-    .review .review__testimonios {
+    .review .reviews__testimonios {
       display: flex;
       flex-direction: column;
-      background: #fff;
+      background: #eee;
       padding: 30px;
-      width: 300px;
-      margin: 15px 20px;
-      justify-content: center;
-      border-radius: 20px;
+      margin: 15px 25px;
+      justify-content: start;
+      border-radius: 10px;
       transition: .4s; }
-      .review .review__testimonios .image {
-        width: 13rem;
-        height: 140px;
+      .review .reviews__testimonios .image {
+        width: 8rem;
         margin: 0 auto;
         border-radius: 50%; }
-      .review .review__testimonios .name {
+      .review .reviews__testimonios .name {
         font-size: 20px;
         text-transform: uppercase;
         margin: 20px auto; }
-      .review .review__testimonios .stars {
+      .review .reviews__testimonios .stars {
         color: #6ab04c;
         margin-bottom: 20px; }
-      .review .review__testimonios .info {
+      .review .reviews__testimonios .info {
         font-size: 1.1em;
         color: #707070;
         transition: .4s; }
-  .review__testimonios:hover {
-    box-shadow: 7px 13px 37px #adadad;
-    color: #000;
+  @media screen and (min-width: 768px) {
+    .review .reviews {
+      margin: 0 25px; }
+      .review .reviews__testimonios {
+        width: 400px;
+        background: #fff;
+        min-height: 470px;
+        margin: 15px 60px; }
+        .review .reviews__testimonios .image {
+          width: 15rem;
+          height: 10rem; } }
+  .review .reviews__testimonios:hover {
+    box-shadow: 7px 11px 22px #dddbdb;
+    background-color: #eee;
     cursor: pointer; }
 
 .tittle2 {
@@ -201,13 +216,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(7, 200px);
-  grid-template-areas: "imagen1 imagen2 imagen3 imagen3"
- "imagen1 imagen4 imagen3 imagen3"
- "imagen7 imagen4 imagen6 imagen9"
- "imagen7 imagen12 imagen6 imagen9"
- "imagen8 imagen8 imagen11 imagen10"
- "imagen8 imagen8 imagen11 imagen10"
- "imagen5 imagen5 imagen13 imagen13";
+  grid-template-areas: "imagen1 imagen2 imagen3 imagen3" "imagen1 imagen4 imagen3 imagen3" "imagen7 imagen4 imagen6 imagen9" "imagen7 imagen12 imagen6 imagen9" "imagen8 imagen8 imagen11 imagen10" "imagen8 imagen8 imagen11 imagen10" "imagen5 imagen5 imagen13 imagen13";
   padding: 26px 10px;
   object-fit: cover;
   gap: 10px; }
@@ -220,10 +229,10 @@
       height: 100%;
       border-radius: 10px;
       object-fit: cover;
-      filter: grayscale(1);
+      filter: grayscale(0);
       transition: .4s; }
     .container__grid .grid__item .grid__image:hover {
-      filter: grayscale(0); }
+      filter: grayscale(1); }
   .container__grid .grid__item:hover .grid__image {
     transform: scale(1.1); }
   .container__grid .item1 {
@@ -253,20 +262,16 @@
   .container__grid .item13 {
     grid-area: imagen13; }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 768px) {
   .container__grid {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(4, 200px);
-    grid-template-areas: "imagen1 imagen2 imagen3 imagen3"
- "imagen1 imagen4 imagen3 imagen3"
- "imagen7 imagen7 imagen9 imagen9"
- "imagen12 imagen6 imagen6 imagen6"
- "imagen8 imagen8 imagen10 imagen10"
- "imagen8 imagen8 imagen11 imagen11"
- "imagen5 imagen5 imagen5 imagen13";
+    grid-template-areas: "imagen1 imagen1 imagen3 imagen3" "imagen2 imagen4 imagen3 imagen3" "imagen7 imagen7 imagen9 imagen9" "imagen12 imagen6 imagen6 imagen6" "imagen8 imagen8 imagen10 imagen10" "imagen8 imagen8 imagen11 imagen11" "imagen5 imagen5 imagen5 imagen13";
     gap: 5px;
-    margin: 0 10px; } }
+    margin: 0 10px; }
+    .container__grid .grid__item .grid__image {
+      filter: grayscale(0); } }
 
 .form {
   width: 400px;

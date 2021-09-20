@@ -17,18 +17,18 @@
         color: $green-color3;
     }
     &__info{
-        font-size: 25px;
+        font-size: 1.6rem;
         text-align: center;
         font-weight: 400;
         margin-bottom: 25px;
     }
     &__description{
-        /* color: ; */
+        
         text-align: center;
-        padding: 80px 40px;
+        padding: 40px;
         font-style: italic;
         line-height: 2.4rem;
-        font-size: 1.5rem;
+        font-size: 1.1rem;
         color: rgb(85, 83, 83);
     }
 }
@@ -36,7 +36,7 @@
 
 .hover{
     &__image{
-        width: 22rem;
+        width: 14rem;
         border-radius: 40px;
         top: 20px;
         
@@ -49,17 +49,18 @@
     transform: scale(1.1);
 }
 
-/*
-@media screen and (max-width: 768px) {
+
+@media screen and (min-width: 768px) {
         .hero{
             .hover{
                     &__image{
-                        width: 22rem;
-                        
-                    }
+                        width: 28rem;
+                        margin-top: 1rem;
+                        }
                 }
             }
-            
+        }
+
+
 
             
-*/

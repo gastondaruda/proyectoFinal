@@ -8,6 +8,7 @@
     <meta name="keywords" content="reseñas, famosos, opiniones, valoración, clientes">
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="shortcut icon" href="imagenes/icon.png">
     <link rel="stylesheet" href="css/style.css">
     <title>Reseñas - Plant Based Food</title>
 </head>
@@ -38,15 +39,10 @@
                                 <button class="btn dropdown-toggle nav-link" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">Contacto</button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
                                     <li><a class="dropdown-item" type="button" href="contacto.html">Hace una reserva</a></li>
-                                    <li><a class="dropdown-item" type="button">Facebook</a></li>
-                                    <li><a class="dropdown-item" type="button">Instagram</a></li>
+                                    <li><a href="https://www.facebook.com/" class="dropdown-item" type="button" target="_blank">Facebook</a></li>
+                                    <li><a href="https://www.instagram.com/" class="dropdown-item" type="button" target="_blank">Instagram</a></li>
                                 </ul>
                             </div>
-                        <!--
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                        </li>
-                        -->
                     
                     </ul>
                 </div>
@@ -92,9 +88,9 @@
             <h2 class="review__tittle2">Reseñas de nuestros clientes más reconocidos</h2>
             
 
-            <div class="row review">
+            <div class="reviews">
                 
-                    <div class="review__testimonios">
+                    <div class="reviews__testimonios">
                         <img class="image" src="imagenes/reseña1.jpg" alt="">
                     <div class="name">Arnold Schwarzenegger</div>
                     <div class="stars">
@@ -110,7 +106,7 @@
                 
 
                 
-                    <div class="review__testimonios">
+                    <div class="reviews__testimonios">
                         <img class="image" src="imagenes/reseña2.jpg" alt="">
                     <div class="name">Dua Lipa</div>
                     <div class="stars">
@@ -121,12 +117,12 @@
                             <i class='bx bxs-star'></i>
                     </div>
 
-                    <p class="info">"1 tiene que venir, 2 no se arrepentiran, 3 impresionante. Mi paladar quedo fascianda"</p>
+                    <p class="info">"1 tienen que venir, 2 no se arrepentiran, 3 impresionante. Mi paladar quedó fascinada"</p>
                     </div>
                 
 
-               
-                    <div class="review__testimonios">
+            
+                    <div class="reviews__testimonios">
                         <img class="image" src="imagenes/reseña3.jpg" alt="">
                     <div class="name">Jason Momoa</div>
                     <div class="stars">
@@ -142,7 +138,7 @@
                 
 
                 
-                    <div class="review__testimonios">
+                    <div class="reviews__testimonios">
                         <img class="image" src="imagenes/reseña4.jpg" alt="">
                     <div class="name">Dwyane The Rock Johnson</div>
                     <div class="stars">
@@ -158,7 +154,7 @@
                 
 
                 
-                    <div class="review__testimonios">
+                    <div class="reviews__testimonios">
                         <img class="image" src="imagenes/reseña5.jpg" alt="">
                     <div class="name">Chris Pratt</div>
                     <div class="stars">
@@ -174,7 +170,7 @@
                 
 
                 
-                    <div class="review__testimonios">
+                    <div class="reviews__testimonios">
                         <img class="image" src="imagenes/reseña6.jpg" alt="">
                     <div class="name">Anne Hattenway</div>
                     <div class="stars">
@@ -192,48 +188,6 @@
         
 
 
-
-
-
-        <!--
-        <h2 class="review-title">Reseñas de nuestros clientes más reconocidos</h2>
-        <div  class="review"> 
-        <div class="review--content">
-            <h3 class="review-subtittle">Arnold Schwarzenegger</h3>
-            <p class="review-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi id illo inventore consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, placeat!</p>
-            <img class="review-image" src="imagenes/reseña1.jpg" alt="Arnold Schwarzenegger">
-        </div>
-        <div class="review--content">
-            <h3 class="review-subtittle">Dua Lipa</h3>
-            <p class="review-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi id illo inventore consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, placeat!</p>
-            <img class="review-image" src="imagenes/reseña2.jpg" alt="Dua Lipa">
-        </div>
-        <div class="review--content">
-            <h3 class="review-subtittle">Jason Momoa</h3>
-            <p class="review-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi id illo inventore consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, placeat!</p>
-            <img class="review-image" src="imagenes/reseña3.jpg" alt="Jason Momoa">
-        </div>
-        <div class="review--content">
-            <h3 class="review-subtittle">The Rock</h3>
-            <p class="review-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi id illo inventore consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, placeat!</p>
-            <img class="review-image" src="imagenes/reseña4.jpg" alt="The Rock">
-        </div>
-        <div class="review--content">
-            <h3 class="review-subtittle">Chris Pratt</h3>
-            <p class="review-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi id illo inventore consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, placeat!</p>
-            <img class="review-image" src="imagenes/reseña5.jpg" alt="Chris Pratt">
-        </div>
-        <div class="review--content">
-            <h3 class="review-subtittle">Anne Hathaway</h3>
-            <p class="review-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi id illo inventore consectetur Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, placeat!</p>
-            <img class="review-image" src="imagenes/reseña6.jpg" alt="Anne Hathaway">
-        </div>
-    </div>
-
-
-
-
-    -->
     </main>
 
 
@@ -241,9 +195,9 @@
         <img class="foot__image" src="imagenes/footerimage.jpg" alt="">
         <h5 class="foot__tittle2">Redes Sociales</h5>
         <div class="foot__icons">
-            <a href="#"><i class='bx bxl-facebook-square'></i></a>
-            <a href="#"><i class='bx bxl-instagram' ></i></a>
-            <a href="#"><i class='bx bxl-whatsapp'></i></a>
+            <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-square'></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><i class='bx bxl-whatsapp'></i></a>
         </div>
         <h6>@Copyright</h6>      
     </footer>
